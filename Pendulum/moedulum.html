@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+	 <html lang="en">
+   <head>
+  
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="Mouminatou Barry" content>
+
+    
+        <!--Icon--><title>Pendulum</title>
+<link rel="icon" type="image/png" href="../imgs/TransLogo.png">
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
+</head>
+<style type="text/css">
+
+	body {
+  background: #fa0;
+  -webkit-animation: 40s infinite background-color-change;
+          animation: 40s infinite background-color-change;
+
+  font-family: 'Oleo Script', cursive;
+}
+
+.logo {
+  position: absolute;
+  top: 1%;
+  left: 21%;
+  margin-left: -6px;
+  width: 32px;
+  text-align: center;
+  
+}
+.pendulum {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  margin-left: -16px;
+  width: 32px;
+  text-align: center;
+  -webkit-animation: 1s ease-in-out infinite pendulum-swing;
+          animation: 1s ease-in-out infinite pendulum-swing;
+  -webkit-transform-origin: 50% 0;
+          transform-origin: 50% 0;
+  will-change: transform;
+}
+.pendulum:before {
+  content: '';
+  display: block;
+  margin: 0 auto;
+  width: 1px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.6);
+}
+.pendulum:after {
+  content: '';
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: #fa0;
+  border-radius: 50%;
+  background: -webkit-radial-gradient(10px 10px, circle, #ffffff, #555555);
+  background: radial-gradient(circle at 10px 10px, #ffffff, #555555);
+  box-shadow: inset -3px -3px 3px rgba(68, 68, 68, 0.3);
+}
+
+.pendulum:nth-of-type(0) {
+  z-index: 16;
+  -webkit-animation-duration: 1.33333s;
+          animation-duration: 1.33333s;
+}
+.pendulum:nth-of-type(0):before {
+  height: 80px;
+}
+
+.pendulum:nth-of-type(1) {
+  z-index: 15;
+  -webkit-animation-duration: 1.37931s;
+          animation-duration: 1.37931s;
+}
+.pendulum:nth-of-type(1):before {
+  height: 102px;
+}
+
+.pendulum:nth-of-type(2) {
+  z-index: 14;
+  -webkit-animation-duration: 1.42857s;
+          animation-duration: 1.42857s;
+}
+.pendulum:nth-of-type(2):before {
+  height: 124px;
+}
+
+.pendulum:nth-of-type(3) {
+  z-index: 13;
+  -webkit-animation-duration: 1.48148s;
+          animation-duration: 1.48148s;
+}
+.pendulum:nth-of-type(3):before {
+  height: 146px;
+}
+
+.pendulum:nth-of-type(4) {
+  z-index: 12;
+  -webkit-animation-duration: 1.53846s;
+          animation-duration: 1.53846s;
+}
+.pendulum:nth-of-type(4):before {
+  height: 168px;
+}
+
+.pendulum:nth-of-type(5) {
+  z-index: 11;
+  -webkit-animation-duration: 1.6s;
+          animation-duration: 1.6s;
+}
+.pendulum:nth-of-type(5):before {
+  height: 190px;
+}
+
+.pendulum:nth-of-type(6) {
+  z-index: 10;
+  -webkit-animation-duration: 1.66667s;
+          animation-duration: 1.66667s;
+}
+.pendulum:nth-of-type(6):before {
+  height: 212px;
+}
+
+.pendulum:nth-of-type(7) {
+  z-index: 9;
+  -webkit-animation-duration: 1.73913s;
+          animation-duration: 1.73913s;
+}
+.pendulum:nth-of-type(7):before {
+  height: 234px;
+}
+
+.pendulum:nth-of-type(8) {
+  z-index: 8;
+  -webkit-animation-duration: 1.81818s;
+          animation-duration: 1.81818s;
+}
+.pendulum:nth-of-type(8):before {
+  height: 256px;
+}
+
+.pendulum:nth-of-type(9) {
+  z-index: 7;
+  -webkit-animation-duration: 1.90476s;
+          animation-duration: 1.90476s;
+}
+.pendulum:nth-of-type(9):before {
+  height: 278px;
+}
+
+.pendulum:nth-of-type(10) {
+  z-index: 6;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+.pendulum:nth-of-type(10):before {
+  height: 300px;
+}
+
+.pendulum:nth-of-type(11) {
+  z-index: 5;
+  -webkit-animation-duration: 2.10526s;
+          animation-duration: 2.10526s;
+}
+.pendulum:nth-of-type(11):before {
+  height: 322px;
+}
+
+.pendulum:nth-of-type(12) {
+  z-index: 4;
+  -webkit-animation-duration: 2.22222s;
+          animation-duration: 2.22222s;
+}
+.pendulum:nth-of-type(12):before {
+  height: 344px;
+}
+
+.pendulum:nth-of-type(13) {
+  z-index: 3;
+  -webkit-animation-duration: 2.35294s;
+          animation-duration: 2.35294s;
+}
+.pendulum:nth-of-type(13):before {
+  height: 366px;
+}
+
+.pendulum:nth-of-type(14) {
+  z-index: 2;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
+}
+.pendulum:nth-of-type(14):before {
+  height: 388px;
+}
+
+.pendulum:nth-of-type(15) {
+  z-index: 1;
+  -webkit-animation-duration: 2.66667s;
+          animation-duration: 2.66667s;
+}
+.pendulum:nth-of-type(15):before {
+  height: 410px;
+}
+
+.pendulum:nth-of-type(16) {
+  z-index: 0;
+  -webkit-animation-duration: 2.85714s;
+          animation-duration: 2.85714s;
+}
+.pendulum:nth-of-type(16):before {
+  height: 432px;
+}
+
+@-webkit-keyframes pendulum-swing {
+  0% {
+    -webkit-transform: rotate(25deg);
+            transform: rotate(25deg);
+  }
+  50% {
+    -webkit-transform: rotate(-25deg);
+            transform: rotate(-25deg);
+  }
+  100% {
+    -webkit-transform: rotate(25deg);
+            transform: rotate(25deg);
+  }
+}
+
+@keyframes pendulum-swing {
+  0% {
+    -webkit-transform: rotate(25deg);
+            transform: rotate(25deg);
+  }
+  50% {
+    -webkit-transform: rotate(-25deg);
+            transform: rotate(-25deg);
+  }
+  100% {
+    -webkit-transform: rotate(25deg);
+            transform: rotate(25deg);
+  }
+}
+@-webkit-keyframes background-color-change {
+  0% {
+    background-color: #FF5722;
+  }
+  7% {
+    background-color: #E91E63;
+  }
+  14% {
+    background-color: #9C27B0;
+  }
+  21% {
+    background-color: #673AB7;
+  }
+  28% {
+    background-color: #3F51B5;
+  }
+  35% {
+    background-color: #2196F3;
+  }
+  42% {
+    background-color: #03A9F4;
+  }
+  49% {
+    background-color: #00BCD4;
+  }
+  56% {
+    background-color: #009688;
+  }
+  63% {
+    background-color: #4CAF50;
+  }
+  70% {
+    background-color: #8BC34A;
+  }
+  77% {
+    background-color: #CDDC39;
+  }
+  84% {
+    background-color: #FFC107;
+  }
+  91% {
+    background-color: #FF9800;
+  }
+  100% {
+    background-color: #FF5722;
+  }
+}
+@keyframes background-color-change {
+  0% {
+    background-color: #FF5722;
+  }
+  7% {
+    background-color: #E91E63;
+  }
+  14% {
+    background-color: #9C27B0;
+  }
+  21% {
+    background-color: #673AB7;
+  }
+  28% {
+    background-color: #3F51B5;
+  }
+  35% {
+    background-color: #2196F3;
+  }
+  42% {
+    background-color: #03A9F4;
+  }
+  49% {
+    background-color: #00BCD4;
+  }
+  56% {
+    background-color: #009688;
+  }
+  63% {
+    background-color: #4CAF50;
+  }
+  70% {
+    background-color: #8BC34A;
+  }
+  77% {
+    background-color: #CDDC39;
+  }
+  84% {
+    background-color: #FFC107;
+  }
+  91% {
+    background-color: #FF9800;
+  }
+  100% {
+    background-color: #FF5722;
+  }
+}
+
+</style>
+<body>
+<div>
+<div class="logo"><img src="TransLogo.png" style="z-index:2; height:300px;"></div>
+<div class='pendulum'></div>
+<div class='pendulum'></div>
+<div class='pendulum'></div>
+<div class='pendulum'></div>
+<div class='pendulum'></div>
+<div class='pendulum'></div>
+<div class='pendulum'></div>
+<div class='pendulum'></div>
+<div class='pendulum'></div>
+<div class='pendulum'></div>
+<div class='pendulum'></div>
+<div class='pendulum'></div>
+<div class='pendulum'></div>
+<div class='pendulum'></div>
+<div class='pendulum'></div>
+</div>
+<!--Title-->
+<div class="" style="text-align: center;">
+
+      
+<svg viewBox="0 0 700 400" style="bottom:-500px;">
+
+              <!-- Symbol -->
+              <symbol id="s-text">
+                <text text-anchor="middle"
+                      x="50%" y="50%" dy=".35em">
+                 MOe Techtainment
+                </text>
+              </symbol>  
+
+              <!-- Duplicate symbols -->
+              <use xlink:href="#s-text" class="text"
+                   ></use>
+              <use xlink:href="#s-text" class="text"
+                   ></use>
+              <use xlink:href="#s-text" class="text"
+                   ></use>
+              <use xlink:href="#s-text" class="text"
+                   ></use>
+              <use xlink:href="#s-text" class="text"
+                   ></use>
+
+            </svg>
+</div>
+
+</body>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/snap.svg-min.js"></script>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/requestAnimationFrame.js"></script>
+
+<script type="text/javascript" src="../js/style.js"></script>
+</html>
